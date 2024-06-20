@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css", media="screen" href="{{% static 'styles/main.css' %}}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/main.css' %}">
     <title>STUDY BUDDY</title>
 </head>
 
@@ -19,7 +19,7 @@
     {% if messages %}
     <ul class="messages">
         {% for message in messages %}
-        <li>{% message %} </li>
+        <li>{{ message }} </li>
         {% endfor %}
 
     </ul>
